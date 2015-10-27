@@ -1,0 +1,6 @@
+<h1 class="header"> List of gears </h1>
+<p>Here's a list of gears video team currently owns</p>
+<% @gears.each do |gear| %> 
+<h1> <%= gear.name %></h1>
+<h2> <%= gear.description %> owned by <%= gear.owner %></h2>
+<% end %>
