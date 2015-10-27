@@ -1,0 +1,8 @@
+<h1>enter new gears</h1>
+
+<%= simple_form_for @gears do |f| %>
+    <%= f.input :name %>
+    <%= f.input :description %>
+    <%= f.input :owner %>
+    <%= f.submit 'enter' %>
+    <% end %>

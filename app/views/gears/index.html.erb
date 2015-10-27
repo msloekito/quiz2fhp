@@ -2,5 +2,7 @@
 <p>Here's a list of gears video team currently owns</p>
 <% @gears.each do |gear| %> 
 <h1> <%= gear.name %></h1>
-<h2> <%= gear.description %> owned by <%= gear.owner %></h2>
+<h3> <%= gear.description %> owned by <%= gear.owner %></h3>
 <% end %>
+
+<%= link_to 'Add new gears', new_gear_path %>
